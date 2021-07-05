@@ -1,0 +1,52 @@
+@import '../../../scss/index.scss';
+.menu-top-web {
+    position: sticky;
+    top: 0;
+    background-color: $background-dark-web;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 31% 50% 20%);
+    align-items: center;
+    padding: 10px;
+    a {
+        color: white!important;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary-color !important;
+        }
+    }
+    &__logo {
+        h1 {
+            color: $primary-color;
+            margin-bottom: 0;
+        }
+    }
+    &__menus {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.social-links {
+    align-items: center;
+    float: right;
+    a {
+        display: flex;
+        margin-right: 10px;
+        padding: 5px 8px;
+        border-radius: 5px;
+        i {
+            color: white;
+        }
+        svg {
+            width: 15px;
+            height: 20px;
+            color: white;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+    }
+}

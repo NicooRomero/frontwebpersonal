@@ -1,0 +1,31 @@
+@import '../scss/index.scss';
+.ant-layout {
+    background: $background-dark-web!important;
+}
+
+.layout-admin {
+    transition: margin-left 0.2s;
+    &__header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        height: 65px;
+    }
+    &__content {
+        background-color: #dedede;
+        min-height: calc(100vh - 65px);
+        padding: 90px 25px 25px 25px;
+    }
+    &__footer {
+        color: $font-grey-light;
+        padding: 0;
+        margin: 20px;
+    }
+    .ant-layout-header,
+    .ant-layout-footer {
+        background: $background-dark-web!important;
+    }
+}

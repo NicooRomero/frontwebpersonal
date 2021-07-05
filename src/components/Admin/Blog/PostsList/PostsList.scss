@@ -1,0 +1,20 @@
+@import '../../../../scss/index.scss';
+.posts-list {
+    background-color: $background-dark-light-web;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    .ant-list-item {
+        border-bottom: 1px solid #f0f0f0;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .ant-list-item-meta {
+        &-title {
+            color: $primary-color;
+        }
+        &-description {
+            color: $font-grey-light;
+        }
+    }
+}

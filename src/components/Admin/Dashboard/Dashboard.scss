@@ -1,0 +1,14 @@
+@import '../../../scss/index.scss';
+.dashboard-list {
+    &__card {
+        height: 200px;
+        width: 440px;
+        .ant-card-meta-title {
+            font-size: 50px;
+            margin-top: -20px;
+        }
+        .ant-card-meta-detail>div:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}

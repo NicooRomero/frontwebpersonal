@@ -1,0 +1,31 @@
+@import '../../../../scss/index.scss';
+.menu-web-list {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    &__items {
+        background-color: $background-dark-light-web;
+        padding: 10px 20px;
+        .ant-list-item-meta {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .ant-list-item {
+        border-bottom: 1px solid #f0f0f0;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .ant-list-item-meta {
+        &-title {
+            color: $primary-color;
+        }
+        &-description {
+            color: $font-grey-light;
+        }
+    }
+}

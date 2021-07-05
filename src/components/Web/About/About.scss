@@ -1,0 +1,54 @@
+@import '../../../scss/index.scss';
+.about-section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .ant-row {
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+        h2 {
+            color: $font-light;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    .row-cards {
+        .ant-col {
+            padding: 15px !important;
+        }
+    }
+    &__card {
+        border: 0;
+        background-color: transparent;
+        p {
+            text-align: justify;
+            font-size: 15px;
+            color: $primary-color-dark;
+        }
+        .ant-card-meta {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            margin-bottom: 20px;
+            .ant-card-meta-avatar {
+                .ant-avatar {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .ant-card-meta-detail {
+                .ant-card-meta-title {
+                    color: $primary-color;
+                    font-size: 20px;
+                }
+                .ant-card-meta-description {
+                    color: $primary-color-dark;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
