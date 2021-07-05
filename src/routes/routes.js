@@ -99,7 +99,7 @@ const routes = [
             },
             {
                 component: Error404
-            }
+            } 
         ]
     }
 ];
