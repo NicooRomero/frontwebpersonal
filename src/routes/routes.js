@@ -9,6 +9,7 @@ import AdminUsers from '../pages/Admin/Users';
 import AdminMenuWeb from '../pages/Admin/Menu';
 import AdminCourses from '../pages/Admin/Courses.js';
 import AdminBlog from '../pages/Admin/Blog';
+import AdminPortfolio from '../pages/Admin/Portfolio';
 
 
 //Pages
@@ -17,6 +18,7 @@ import Portfolio from '../pages/Portfolio';
 import Skills from '../pages/Skills';
 import Blog from '../pages/Blog';
 import Contact from '../pages/Contact';
+import Cursos from '../pages/Cursos';
 
 //Error404
 import Error404 from '../pages/Error404';
@@ -58,6 +60,11 @@ const routes = [
                 exact: true
             },
             {
+                path: "/admin/portfolio",
+                component: AdminPortfolio,
+                exact: true
+            },
+            {
                 component: Error404
             }
         ]
@@ -88,13 +95,18 @@ const routes = [
                 exact: true
             },
             {
-                path: "/:url",
+                path: "/blog/:url",
                 component: Blog,
                 exact: true
             },
             {
                 path: "/contact",
                 component: Contact,
+                exact: true
+            },
+            {
+                path: "/cursos",
+                component: Cursos,
                 exact: true
             },
             {

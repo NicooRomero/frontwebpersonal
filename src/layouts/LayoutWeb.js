@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Row, Col } from 'antd';
 import MenuTop from '../components/Web/MenuTop';
+import Footer from '../components/Web/Footer';
 
 import './LayoutWeb.scss';
 
@@ -17,7 +18,7 @@ const LayoutWeb = ({routes}) => {
                 <Col lg={4} />
             </Row>
             <LoadRoutes routes={routes} />
-            <h1>footer</h1>
+            <Footer />
         </>
     );
 }

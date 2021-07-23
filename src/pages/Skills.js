@@ -1,7 +1,8 @@
 import React from 'react';
+import ListSkills from '../components/Web/Skills';
 
 const Skills = () => {
-    return ( <h1>Skills</h1> );
+    return ( <ListSkills /> );
 }
  
 export default Skills;

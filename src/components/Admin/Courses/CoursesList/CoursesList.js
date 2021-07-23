@@ -11,7 +11,6 @@ const { confirm } = ModalAntd;
 
 const CoursesList = (props) => {
     const { courses, setReloadCourses } = props;
-    console.log(courses)
     const [ listCourses, setListCourses] = useState([]);
     const [ isVisible, setIsVisible ] = useState(false);
     const [ modalTitle, setModalTitle ] = useState('');

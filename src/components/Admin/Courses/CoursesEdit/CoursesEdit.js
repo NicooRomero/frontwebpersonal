@@ -14,7 +14,6 @@ const EditCourse = (props) => {
     }, [course])
 
     const addCourse = () => {
-        console.log(courseData)
         if(!courseData) {
             notification["error"]({
                 message: "Todos los campos son obligatorios"

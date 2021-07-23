@@ -9,6 +9,10 @@
     background-color: $background-error !important;
 }
 
+.ant-btn {
+    position: inherit;
+}
+
 .ant-btn-primary {
     background: $primary-color;
     border-color: $primary-color;

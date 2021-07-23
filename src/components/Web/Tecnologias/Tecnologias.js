@@ -1,7 +1,9 @@
 import React from 'react';
-import { Row, Col, Card } from 'antd';
-import Icon from '@ant-design/icons';
+import { Row, Col, Card, Avatar } from 'antd';
 import Carousel from '../../Carousel';
+import FRONT from '../../../assets/img/png/assets-front.png';
+import BACK from '../../../assets/img/png/assets-back.png';
+import DBS from '../../../assets/img/png/assets-dbs.png';
 import './Tecnologias.scss';
 
 const Tecnologias = () => {
@@ -17,13 +19,13 @@ const Tecnologias = () => {
             <Col lg={16}>
                 <Row className="row-cards">
                     <Col md={8}>
-                        <CardInfo title="Front-End" subtitle="HTML, CSS3, SASS, JavaScript, React JS, Bootstrap." />
+                        <CardInfo avatar={FRONT} title="Front-End" subtitle="HTML, CSS3, SASS, JavaScript, React JS, Bootstrap." />
                     </Col>
                     <Col md={8}>
-                        <CardInfo title="Back-End" subtitle="PHP, Node JS, Express, JAVA, Python." />
+                        <CardInfo avatar={BACK} title="Back-End" subtitle="PHP, Node JS, Express, JAVA, Python." />
                     </Col>
                     <Col md={8}>
-                        <CardInfo title="Base de datos" subtitle="Mongo DB, MySql, PostgreSQL." />
+                        <CardInfo avatar={DBS} title="Base de datos" subtitle="Mongo DB, MySql, PostgreSQL." />
                     </Col>
                 </Row>
             </Col>
@@ -35,12 +37,12 @@ const Tecnologias = () => {
 }
 
 function CardInfo(props){
-    const { title, subtitle } = props;
+    const { title, subtitle, avatar } = props;
     const { Meta } = Card;
 
     return (
         <Card className="tec-ok__card">
-            <Meta title={title} description={subtitle} />
+            <Meta  avatar={ <Avatar src={avatar} /> } title={title} description={subtitle} />
         </Card>
     );
 }

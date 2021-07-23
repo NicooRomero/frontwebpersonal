@@ -17,4 +17,16 @@
     .btn-submit {
         width: 100%;
     }
+    .upload-preview {
+        display: table;
+        border: 2px solid #9a9a9a;
+        border-style: dashed;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 150px;
+    }
 }

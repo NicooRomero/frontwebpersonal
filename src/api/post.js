@@ -38,16 +38,51 @@ export function deletePostApi(token, id) {
         })
 }
 
-export function addPostApi(token, post) {
+// export function addPostApi(token, post) {
+//     const url = `${basePath}/post/add-post`;
+
+//     const params = {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json",
+//             Authorization: token
+//         },
+//         body: JSON.stringify(post)
+//     }
+
+//     return fetch(url, params)
+//         .then(response => {
+//             return response.json()
+//         })
+//         .then(result => {
+//             return result;
+//         })
+//         .catch(err => {
+//             return err;
+//         })
+// }
+
+export function addPostApi(token, formData) {
     const url = `${basePath}/post/add-post`;
 
+    // const formData = new FormData();
+    // const title = post.title;
+    // const burl = post.url;
+    // const desc = post.description;
+    // const blob = post.img;
+    // console.log(blob)
+
+    // formData.append('img', blob);
+    // formData.append('title', title);
+    // formData.append('url', burl);
+    // formData.append('description', desc);
+    
     const params = {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
             Authorization: token
         },
-        body: JSON.stringify(post)
+        body: formData
     }
 
     return fetch(url, params)

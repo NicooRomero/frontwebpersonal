@@ -1,0 +1,25 @@
+@import '../../../../scss/index.scss';
+.social-contact {
+    display: grid;
+    margin: 0 auto;
+    &__icon {
+        display: flex;
+        a {
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            svg {
+                width: 20px;
+                height: 25px;
+                color: white;
+            }
+        }
+        p {
+            color: $font-light;
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+}

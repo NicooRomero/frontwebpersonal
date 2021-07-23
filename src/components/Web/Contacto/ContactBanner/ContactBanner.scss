@@ -1,0 +1,35 @@
+@import '../../../../scss/index.scss';
+.home-contact {
+    position: relative;
+    height: 180px;
+    background-image: url(https://accionpoint.com/wp-content/uploads/remote-developer-1150x430.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .row-contact {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.4;
+        &__banner {
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                color: $font-light;
+                font-weight: bold;
+                font-size: 60px;
+                text-transform: uppercase;
+                margin-top: 20px;
+                text-shadow: 2px 2px 3px #170A06;
+            }
+        }
+    }
+}

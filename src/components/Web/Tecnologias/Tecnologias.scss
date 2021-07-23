@@ -19,10 +19,12 @@
     .row-cards {
         .ant-col {
             padding: 15px !important;
+            margin-bottom: 35px;
         }
     }
     &__card {
         border: 0;
+        min-height: 231px;
         background-color: $background-dark-light-web;
         border-radius: 10px;
         overflow: hidden;
@@ -37,6 +39,19 @@
             font-size: 45px;
             margin-bottom: 20px;
             color: $primary-color-dark;
+        }
+        .ant-card-meta-avatar {
+            float: none;
+            padding-right: 0;
+            .ant-avatar-circle {
+                border-radius: 0;
+                width: 100px;
+                height: 100px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
         }
         .ant-card-meta-detail {
             .ant-card-meta-title {
