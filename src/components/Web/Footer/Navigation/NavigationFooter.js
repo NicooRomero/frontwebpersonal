@@ -25,12 +25,12 @@ function RenderListLeft() {
                 </a>
             </li>
             <li>
-                <a href="/portfolio">
+                <a href="/#/portfolio">
                     <CodeOutlined /> Portfolio
                 </a>
             </li>
             <li>
-                <a href="/blog">
+                <a href="//#/blog">
                     <DatabaseOutlined /> Blog
                 </a>
             </li>
@@ -47,12 +47,12 @@ function RenderListRight() {
     return (
         <ul>
             <li>
-                <a href="/admin">
+                <a href="/#/admin">
                     <HddOutlined /> Administración
                 </a>
             </li>
             <li>
-                <a href="/habilidades">
+                <a href="/#/habilidades">
                     <AppstoreAddOutlined /> Habilidades
                 </a>
             </li>
