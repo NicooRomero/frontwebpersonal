@@ -64,7 +64,7 @@ function Post(props) {
         <List.Item className="post">
             
             <div>
-                <img src={`http://localhost:4000/api/post/get-img/${post.img}`} width={80} alt="hola" />
+                <img src={`https://pwebnicoromero.herokuapp.com/api/post/get-img/${post.img}`} width={80} alt="hola" />
             </div>
                 
             <div>
